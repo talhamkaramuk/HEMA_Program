@@ -8,8 +8,7 @@ namespace HEMA_Program.Forms.SetupForms
 {
     public partial class PIDSetup : Form
     {
-        WorkBook workBook;
-        WorkSheet workSheet;
+        
 
         public PIDSetup()
         {

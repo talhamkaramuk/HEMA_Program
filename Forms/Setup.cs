@@ -62,6 +62,7 @@ namespace HEMA_Program.Forms
         }
         #endregion
 
+        #region Menu Button Click Events
         private void btnConnection_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
@@ -85,5 +86,6 @@ namespace HEMA_Program.Forms
             ActiveButton(sender);
             OpenChildForm(new Info());
         }
+        #endregion
     }
 }

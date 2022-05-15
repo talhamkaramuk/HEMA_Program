@@ -93,6 +93,16 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_always_collect_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_always_collect_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_car_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_car_32", resourceCulture);
@@ -333,6 +343,16 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_new_file_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_new_file_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_no_error_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8_no_error_24", resourceCulture);
@@ -346,6 +366,16 @@ namespace HEMA_Program.Properties {
         internal static System.Drawing.Bitmap icons8_opened_folder_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8_opened_folder_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_pause_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_pause_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

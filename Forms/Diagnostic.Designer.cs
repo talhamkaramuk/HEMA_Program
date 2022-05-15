@@ -36,7 +36,6 @@
             this.btnMonitorTests = new System.Windows.Forms.Button();
             this.btnPIDValues = new System.Windows.Forms.Button();
             this.btnRawData = new System.Windows.Forms.Button();
-            this.btnConsole = new System.Windows.Forms.Button();
             this.panelMain.SuspendLayout();
             this.tabpanelMenu.SuspendLayout();
             this.SuspendLayout();
@@ -76,7 +75,6 @@
             this.tabpanelMenu.Controls.Add(this.btnMonitorTests, 2, 0);
             this.tabpanelMenu.Controls.Add(this.btnPIDValues, 3, 0);
             this.tabpanelMenu.Controls.Add(this.btnRawData, 4, 0);
-            this.tabpanelMenu.Controls.Add(this.btnConsole, 5, 0);
             this.tabpanelMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabpanelMenu.Location = new System.Drawing.Point(0, 0);
             this.tabpanelMenu.Name = "tabpanelMenu";
@@ -100,6 +98,7 @@
             this.btnTroubleCodes.Text = "Trouble\r\nCodes";
             this.btnTroubleCodes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnTroubleCodes.UseVisualStyleBackColor = false;
+            this.btnTroubleCodes.Click += new System.EventHandler(this.btnTroubleCodes_Click);
             // 
             // btnFreezeFrame
             // 
@@ -116,6 +115,7 @@
             this.btnFreezeFrame.Text = "Freeze\r\nFrame";
             this.btnFreezeFrame.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnFreezeFrame.UseVisualStyleBackColor = false;
+            this.btnFreezeFrame.Click += new System.EventHandler(this.btnFreezeFrame_Click);
             // 
             // btnMonitorTests
             // 
@@ -132,6 +132,7 @@
             this.btnMonitorTests.Text = "Monitor\r\nTests";
             this.btnMonitorTests.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnMonitorTests.UseVisualStyleBackColor = false;
+            this.btnMonitorTests.Click += new System.EventHandler(this.btnMonitorTests_Click);
             // 
             // btnPIDValues
             // 
@@ -148,6 +149,7 @@
             this.btnPIDValues.Text = "PID Values";
             this.btnPIDValues.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPIDValues.UseVisualStyleBackColor = false;
+            this.btnPIDValues.Click += new System.EventHandler(this.btnPIDValues_Click);
             // 
             // btnRawData
             // 
@@ -164,22 +166,7 @@
             this.btnRawData.Text = "Raw Data";
             this.btnRawData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnRawData.UseVisualStyleBackColor = false;
-            // 
-            // btnConsole
-            // 
-            this.btnConsole.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnConsole.FlatAppearance.BorderSize = 0;
-            this.btnConsole.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnConsole.Image = global::HEMA_Program.Properties.Resources.icons8_console_28;
-            this.btnConsole.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnConsole.Location = new System.Drawing.Point(500, 0);
-            this.btnConsole.Margin = new System.Windows.Forms.Padding(0);
-            this.btnConsole.Name = "btnConsole";
-            this.btnConsole.Size = new System.Drawing.Size(100, 50);
-            this.btnConsole.TabIndex = 5;
-            this.btnConsole.Text = "Console";
-            this.btnConsole.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnConsole.UseVisualStyleBackColor = false;
+            this.btnRawData.Click += new System.EventHandler(this.btnRawData_Click);
             // 
             // Diagnostic
             // 
@@ -190,6 +177,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Diagnostic";
             this.Text = "Diagnostic";
+            this.Load += new System.EventHandler(this.Diagnostic_Load);
             this.panelMain.ResumeLayout(false);
             this.tabpanelMenu.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -205,7 +193,6 @@
         private System.Windows.Forms.Button btnMonitorTests;
         private System.Windows.Forms.Button btnPIDValues;
         private System.Windows.Forms.Button btnRawData;
-        private System.Windows.Forms.Button btnConsole;
         private System.Windows.Forms.Panel panelForm;
     }
 }

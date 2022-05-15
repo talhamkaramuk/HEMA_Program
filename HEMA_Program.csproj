@@ -56,12 +56,6 @@
     <Compile Include="Forms\Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\DiagForms\Console.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\DiagForms\Console.Designer.cs">
-      <DependentUpon>Console.cs</DependentUpon>
-    </Compile>
     <Compile Include="Forms\DiagForms\FreezeFrame.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +145,18 @@
     <Compile Include="Settings.cs" />
     <EmbeddedResource Include="Forms\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DiagForms\FreezeFrame.resx">
+      <DependentUpon>FreezeFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DiagForms\MonitorTests.resx">
+      <DependentUpon>MonitorTests.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DiagForms\PIDValues.resx">
+      <DependentUpon>PIDValues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DiagForms\RawData.resx">
+      <DependentUpon>RawData.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\DiagForms\TroubleCodes.resx">
       <DependentUpon>TroubleCodes.cs</DependentUpon>
@@ -307,6 +313,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="img\icons8-no-error-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\icons8-new-file-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\icons8-pause-24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="img\icons8-always-collect-24.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
