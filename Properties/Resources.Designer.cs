@@ -103,6 +103,26 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_arrow_left_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_arrow_left_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_arrow_right_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_arrow_right_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_car_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_car_32", resourceCulture);
@@ -146,6 +166,16 @@ namespace HEMA_Program.Properties {
         internal static System.Drawing.Bitmap icons8_dark_theme_22 {
             get {
                 object obj = ResourceManager.GetObject("icons8_dark_theme_22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_data_backup_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_data_backup_28", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -223,6 +253,16 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_edit_graph_report_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_edit_graph_report_28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_electrical_28 {
             get {
                 object obj = ResourceManager.GetObject("icons8_electrical_28", resourceCulture);
@@ -263,9 +303,29 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_fast_forward_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_fast_forward_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_globe_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8_globe_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_graph_report_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_graph_report_28", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -383,6 +443,26 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_play_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_play_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_record_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_record_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_refresh_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8_refresh_24", resourceCulture);
@@ -406,6 +486,26 @@ namespace HEMA_Program.Properties {
         internal static System.Drawing.Bitmap icons8_speed_35 {
             get {
                 object obj = ResourceManager.GetObject("icons8_speed_35", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_statistics_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_statistics_28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_stop_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_stop_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

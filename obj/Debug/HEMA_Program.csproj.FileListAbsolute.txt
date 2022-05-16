@@ -22,3 +22,12 @@ C:\HEMA_Program\obj\Debug\HEMA_Program.csproj.CoreCompileInputs.cache
 C:\HEMA_Program\obj\Debug\HEMA_Program.csproj.CopyComplete
 C:\HEMA_Program\obj\Debug\HEMA_Program.exe
 C:\HEMA_Program\obj\Debug\HEMA_Program.pdb
+C:\HEMA_Program\obj\Debug\HEMA_Program.Forms.DiagForms.FreezeFrame.resources
+C:\HEMA_Program\obj\Debug\HEMA_Program.Forms.DiagForms.MonitorTests.resources
+C:\HEMA_Program\obj\Debug\HEMA_Program.Forms.DiagForms.PIDValues.resources
+C:\HEMA_Program\obj\Debug\HEMA_Program.Forms.DiagForms.RawData.resources
+C:\HEMA_Program\bin\Debug\AGauge.dll
+C:\HEMA_Program\obj\Debug\HEMA_Program.Forms.LogsForm.Plots.resources
+C:\HEMA_Program\obj\Debug\HEMA_Program.Forms.LogsForm.DataLogging.resources
+C:\HEMA_Program\obj\Debug\HEMA_Program.Forms.LogsForm.PlotsConfig.resources
+C:\HEMA_Program\obj\Debug\HEMA_Program.Forms.LogsForm.Stats.resources

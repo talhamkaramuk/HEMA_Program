@@ -130,6 +130,12 @@
   <data name="icons8_always_collect_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-always-collect-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_arrow_left_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-arrow-left-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_arrow_right_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-arrow-right-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_car_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-car-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,6 +150,9 @@
   </data>
   <data name="icons8_dark_theme_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-dark-theme-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_data_backup_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-data-backup-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_data_sheet_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-data-sheet-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -166,6 +175,9 @@
   <data name="icons8_download_from_cloud_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-download-from-cloud-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_edit_graph_report_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-edit-graph-report-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_electrical_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-electrical-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -178,8 +190,14 @@
   <data name="icons8_error_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-error-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_fast_forward_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-fast-forward-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_globe_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-globe-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_graph_report_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-graph-report-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_help_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-help-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -214,6 +232,12 @@
   <data name="icons8_pause_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-pause-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_play_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-play-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_record_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-record-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_refresh_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-refresh-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -222,6 +246,12 @@
   </data>
   <data name="icons8_speed_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-speed-35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_statistics_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-statistics-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_stop_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-stop-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_system_task_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-system-task-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

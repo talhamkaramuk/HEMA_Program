@@ -15,6 +15,10 @@ namespace HEMA_Program.Forms
         public Dashboard()
         {
             InitializeComponent();
+            VerticalProgressBarColor.SetState(pbarLoad, 1);
+            VerticalProgressBarColor.SetState(pbarTemp, 2);
+            valRev.Text = (gaugeRev.Value * 1000).ToString();
+            valSpeed.Text = gaugeSpeed.Value.ToString();
         }
     }
 }
