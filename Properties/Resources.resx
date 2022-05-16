@@ -145,9 +145,6 @@
   <data name="icons8_close_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-close-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_console_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\icons8-console-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8_dark_theme_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-dark-theme-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -247,14 +244,14 @@
   <data name="icons8_speed_35" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-speed-35.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_statistics_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\img\icons8-statistics-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="icons8_stop_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-stop-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_system_task_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-system-task-32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_table_and_graph_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-table-and-graph-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_test_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-test-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

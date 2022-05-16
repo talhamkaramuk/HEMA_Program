@@ -115,7 +115,7 @@
             this.btnStats.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnStats.FlatAppearance.BorderSize = 0;
             this.btnStats.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStats.Image = global::HEMA_Program.Properties.Resources.icons8_statistics_28;
+            this.btnStats.Image = global::HEMA_Program.Properties.Resources.icons8_table_and_graph_28;
             this.btnStats.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnStats.Location = new System.Drawing.Point(306, 0);
             this.btnStats.Margin = new System.Windows.Forms.Padding(0);

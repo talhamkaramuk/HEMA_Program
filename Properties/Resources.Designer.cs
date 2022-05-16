@@ -153,16 +153,6 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_console_28 {
-            get {
-                object obj = ResourceManager.GetObject("icons8_console_28", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_dark_theme_22 {
             get {
                 object obj = ResourceManager.GetObject("icons8_dark_theme_22", resourceCulture);
@@ -493,16 +483,6 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
-        internal static System.Drawing.Bitmap icons8_statistics_28 {
-            get {
-                object obj = ResourceManager.GetObject("icons8_statistics_28", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
-        /// </summary>
         internal static System.Drawing.Bitmap icons8_stop_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8_stop_24", resourceCulture);
@@ -516,6 +496,16 @@ namespace HEMA_Program.Properties {
         internal static System.Drawing.Bitmap icons8_system_task_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_system_task_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_table_and_graph_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_table_and_graph_28", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
