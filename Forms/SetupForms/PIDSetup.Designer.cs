@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelTable = new System.Windows.Forms.Panel();
             this.dgvTable = new System.Windows.Forms.DataGridView();
@@ -40,6 +41,7 @@
             this.btnPolling = new System.Windows.Forms.Button();
             this.btnSave = new System.Windows.Forms.Button();
             this.btnOpen = new System.Windows.Forms.Button();
+            this.ofd = new System.Windows.Forms.OpenFileDialog();
             this.panelMain.SuspendLayout();
             this.panelTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTable)).BeginInit();
@@ -71,14 +73,29 @@
             // 
             // dgvTable
             // 
+            this.dgvTable.AllowUserToAddRows = false;
+            this.dgvTable.AllowUserToDeleteRows = false;
+            this.dgvTable.AllowUserToResizeColumns = false;
+            this.dgvTable.AllowUserToResizeRows = false;
             this.dgvTable.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvTable.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvTable.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvTable.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTable.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvTable.EnableHeadersVisualStyles = false;
             this.dgvTable.Location = new System.Drawing.Point(0, 0);
             this.dgvTable.Name = "dgvTable";
+            this.dgvTable.RowHeadersVisible = false;
+            this.dgvTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTable.Size = new System.Drawing.Size(596, 342);
             this.dgvTable.TabIndex = 0;
+            this.dgvTable.Paint += new System.Windows.Forms.PaintEventHandler(this.dgvTable_Paint);
             // 
             // panelMenu
             // 
@@ -146,6 +163,7 @@
             this.btnSNone.Text = "Select\r\nNone";
             this.btnSNone.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSNone.UseVisualStyleBackColor = true;
+            this.btnSNone.Click += new System.EventHandler(this.btnSNone_Click);
             // 
             // btnSAll
             // 
@@ -161,6 +179,7 @@
             this.btnSAll.Text = "Select All";
             this.btnSAll.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSAll.UseVisualStyleBackColor = true;
+            this.btnSAll.Click += new System.EventHandler(this.btnSAll_Click);
             // 
             // btnAutoConfig
             // 
@@ -206,6 +225,7 @@
             this.btnSave.Text = "Save";
             this.btnSave.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSave.UseVisualStyleBackColor = true;
+            this.btnSave.Click += new System.EventHandler(this.btnSave_Click);
             // 
             // btnOpen
             // 
@@ -221,6 +241,7 @@
             this.btnOpen.Text = "Open";
             this.btnOpen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOpen.UseVisualStyleBackColor = true;
+            this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
             // 
             // PIDSetup
             // 
@@ -255,5 +276,6 @@
         private System.Windows.Forms.Button btnOpen;
         private System.Windows.Forms.Panel panelTable;
         private System.Windows.Forms.DataGridView dgvTable;
+        private System.Windows.Forms.OpenFileDialog ofd;
     }
 }

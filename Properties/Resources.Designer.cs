@@ -153,6 +153,16 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_contacts_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_contacts_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_dark_theme_22 {
             get {
                 object obj = ResourceManager.GetObject("icons8_dark_theme_22", resourceCulture);
@@ -356,6 +366,16 @@ namespace HEMA_Program.Properties {
         internal static System.Drawing.Bitmap icons8_light_theme_22 {
             get {
                 object obj = ResourceManager.GetObject("icons8_light_theme_22", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_lock_24 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_lock_24", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

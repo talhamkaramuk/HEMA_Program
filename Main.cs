@@ -141,6 +141,5 @@ namespace HEMA_Program
             OpenChildForm(new Logs());
         }
         #endregion
-
     }
 }
