@@ -91,6 +91,7 @@
             this.dgvTable.EnableHeadersVisualStyles = false;
             this.dgvTable.Location = new System.Drawing.Point(0, 0);
             this.dgvTable.Name = "dgvTable";
+            this.dgvTable.ReadOnly = true;
             this.dgvTable.RowHeadersVisible = false;
             this.dgvTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTable.Size = new System.Drawing.Size(596, 342);
@@ -210,6 +211,7 @@
             this.btnPolling.Text = "Set Polling Rate";
             this.btnPolling.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPolling.UseVisualStyleBackColor = true;
+            this.btnPolling.Click += new System.EventHandler(this.btnPolling_Click);
             // 
             // btnSave
             // 
@@ -242,6 +244,10 @@
             this.btnOpen.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnOpen.UseVisualStyleBackColor = true;
             this.btnOpen.Click += new System.EventHandler(this.btnOpen_Click);
+            // 
+            // ofd
+            // 
+            this.ofd.Filter = "Excel Files (*.xlsx)|*.xlsx|*.xls|*.xl";
             // 
             // PIDSetup
             // 

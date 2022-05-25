@@ -108,7 +108,7 @@ namespace HEMA_Program.Forms.SetupForms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            dgvTable.SelectAll();
+            //dgvTable.SelectAll();
             DataObject copyData = dgvTable.GetClipboardContent();
             if (copyData != null)
             {
@@ -153,5 +153,23 @@ namespace HEMA_Program.Forms.SetupForms
             dgvTable.ClearSelection();
         }
 
+        private void btnPolling_Click(object sender, EventArgs e)
+        {
+            if (excel != null)
+            {
+                foreach (DataGridViewColumn col in dgvTable.Columns)
+                {
+                    if (col.HeaderText.Equals("Polling Rate"))
+                    {
+                        col.ReadOnly = false;
+                    }
+                }
+                MessageBox.Show("Polling Rate is set to editable", "Set Polling Rate", MessageBoxButtons.OK);
+            }
+            else
+            {
+                MessageBox.Show("First load an excel data", "Null DataTable Error", MessageBoxButtons.OK);
+            }
+        }
     }
 }
