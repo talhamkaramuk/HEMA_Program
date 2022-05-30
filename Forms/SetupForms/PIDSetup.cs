@@ -19,8 +19,7 @@ namespace HEMA_Program.Forms.SetupForms
         DataTable dt;
         DataRow drw;
 
-        int rowCount;
-        int colCount;
+        object miss = Missing.Value;
 
         public PIDSetup()
         {
@@ -108,31 +107,65 @@ namespace HEMA_Program.Forms.SetupForms
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //dgvTable.SelectAll();
-            DataObject copyData = dgvTable.GetClipboardContent();
-            if (copyData != null)
+            if (excel != null)
             {
-                Clipboard.SetDataObject(copyData);
+                #region
+                //DataObject copyData = dgvTable.GetClipboardContent();
+                //if (copyData != null)
+                //{
+                //    Clipboard.SetDataObject(copyData);
+                //}
+
+                //excel = new Excel.Application();
+                //excel.Visible = true;
+                //object missing = Missing.Value;
+                //wb = excel.Workbooks.Add(missing);
+                //ws = (Excel.Worksheet)excel.Worksheets.get_Item(1);
+                //range = (Excel.Range)ws.Cells[1, 1];
+                //range.Select();
+                //ws.PasteSpecial(range, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
+                #endregion
+
+                excel = new Excel.Application();
+                wb = excel.Workbooks.Add(Type.Missing);
+                ws = null;
+
+                ws = wb.Sheets["Sayfa1"];
+                ws = wb.ActiveSheet;
+                ws.Name = "PID Table";
+                range = (Excel.Range)ws.Cells[1, 1];
+                range.Select();
+
+                for (int i = 1; i < dgvTable.Columns.Count + 1; i++)
+                {
+                    ws.Cells[1, i] = dgvTable.Columns[i - 1].HeaderText;
+                }
+
+                for (int i = 0; i < dgvTable.SelectedRows.Count; i++)
+                {
+                    for (int j = 0; j < dgvTable.Columns.Count; j++)
+                    {
+                        ws.Cells[i + 2, j + 1] = dgvTable.SelectedRows[i].Cells[j].Value.ToString();
+                    }
+                }
+
+                saveFileDialog1.FileName = "pid_table";
+                saveFileDialog1.DefaultExt = ".xlsx";
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    wb.SaveAs(saveFileDialog1.FileName, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Excel.XlSaveAsAccessMode.xlExclusive, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing);
+                }
+
+                GC.Collect();
+                GC.WaitForPendingFinalizers();
+
+                wb.Close();
+                excel.Quit();
+
+                Marshal.ReleaseComObject(excel);
+                Marshal.ReleaseComObject(wb);
+                Marshal.ReleaseComObject(ws);
             }
-
-            excel = new Excel.Application();
-            excel.Visible = true;
-            object missing = Missing.Value;
-            wb = excel.Workbooks.Add(missing);
-            ws = (Excel.Worksheet)excel.Worksheets.get_Item(1);
-            range = (Excel.Range)ws.Cells[1, 1];
-            range.Select();
-            ws.PasteSpecial(range, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
-
-            GC.Collect();
-            GC.WaitForPendingFinalizers();
-
-            //wb.Close();
-            //excel.Quit();
-
-            Marshal.ReleaseComObject(excel);
-            Marshal.ReleaseComObject(wb);
-            Marshal.ReleaseComObject(ws);
         }
 
         private void dgvTable_Paint(object sender, PaintEventArgs e)
@@ -151,25 +184,6 @@ namespace HEMA_Program.Forms.SetupForms
         private void btnSNone_Click(object sender, EventArgs e)
         {
             dgvTable.ClearSelection();
-        }
-
-        private void btnPolling_Click(object sender, EventArgs e)
-        {
-            if (excel != null)
-            {
-                foreach (DataGridViewColumn col in dgvTable.Columns)
-                {
-                    if (col.HeaderText.Equals("Polling Rate"))
-                    {
-                        col.ReadOnly = false;
-                    }
-                }
-                MessageBox.Show("Polling Rate is set to editable", "Set Polling Rate", MessageBoxButtons.OK);
-            }
-            else
-            {
-                MessageBox.Show("First load an excel data", "Null DataTable Error", MessageBoxButtons.OK);
-            }
         }
     }
 }

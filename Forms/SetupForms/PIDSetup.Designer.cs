@@ -42,6 +42,7 @@
             this.btnSave = new System.Windows.Forms.Button();
             this.btnOpen = new System.Windows.Forms.Button();
             this.ofd = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.panelMain.SuspendLayout();
             this.panelTable.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTable)).BeginInit();
@@ -91,7 +92,6 @@
             this.dgvTable.EnableHeadersVisualStyles = false;
             this.dgvTable.Location = new System.Drawing.Point(0, 0);
             this.dgvTable.Name = "dgvTable";
-            this.dgvTable.ReadOnly = true;
             this.dgvTable.RowHeadersVisible = false;
             this.dgvTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTable.Size = new System.Drawing.Size(596, 342);
@@ -211,7 +211,6 @@
             this.btnPolling.Text = "Set Polling Rate";
             this.btnPolling.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnPolling.UseVisualStyleBackColor = true;
-            this.btnPolling.Click += new System.EventHandler(this.btnPolling_Click);
             // 
             // btnSave
             // 
@@ -283,5 +282,6 @@
         private System.Windows.Forms.Panel panelTable;
         private System.Windows.Forms.DataGridView dgvTable;
         private System.Windows.Forms.OpenFileDialog ofd;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
