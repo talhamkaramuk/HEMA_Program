@@ -74,7 +74,6 @@
             // 
             // dgvTable
             // 
-            this.dgvTable.AllowUserToAddRows = false;
             this.dgvTable.AllowUserToDeleteRows = false;
             this.dgvTable.AllowUserToResizeColumns = false;
             this.dgvTable.AllowUserToResizeRows = false;
@@ -96,6 +95,7 @@
             this.dgvTable.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvTable.Size = new System.Drawing.Size(596, 342);
             this.dgvTable.TabIndex = 0;
+            this.dgvTable.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.dgvTable_EditingControlShowing);
             this.dgvTable.Paint += new System.Windows.Forms.PaintEventHandler(this.dgvTable_Paint);
             // 
             // panelMenu

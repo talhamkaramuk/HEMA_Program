@@ -126,7 +126,7 @@ namespace HEMA_Program
         private void btnDiagnostic_Click(object sender, EventArgs e)
         {
             ActiveButton(sender);
-            OpenChildForm(new Diagnostic());
+            OpenChildForm(new Diag());
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
@@ -140,6 +140,8 @@ namespace HEMA_Program
             ActiveButton(sender);
             OpenChildForm(new Logs());
         }
+
+
         #endregion
     }
 }

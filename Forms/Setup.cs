@@ -50,7 +50,7 @@ namespace HEMA_Program.Forms
         {
             if (currentChildForm != null)
             {
-                currentChildForm.Close();
+                currentChildForm.Hide();
             }
             currentChildForm = childForm;
             childForm.TopLevel = false;

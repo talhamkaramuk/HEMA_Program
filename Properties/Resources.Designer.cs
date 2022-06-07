@@ -243,6 +243,26 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_document_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_document_28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_document_write_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_document_write_28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_download_from_cloud_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8_download_from_cloud_24", resourceCulture);
@@ -373,6 +393,16 @@ namespace HEMA_Program.Properties {
         /// <summary>
         ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_link_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_link_28", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_lock_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8_lock_24", resourceCulture);
@@ -466,6 +496,16 @@ namespace HEMA_Program.Properties {
         internal static System.Drawing.Bitmap icons8_record_24 {
             get {
                 object obj = ResourceManager.GetObject("icons8_record_24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   System.Drawing.Bitmap türünde yerelleştirilmiş bir kaynak arar.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_record_28 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_record_28", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -172,6 +172,12 @@
   <data name="icons8_data_sheet_x_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-data-sheet-x-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_document_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-document-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_document_write_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-document-write-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_download_from_cloud_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-download-from-cloud-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -211,6 +217,9 @@
   <data name="icons8_light_theme_22" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-light-theme-22.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_link_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-link-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_lock_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-lock-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -240,6 +249,9 @@
   </data>
   <data name="icons8_record_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-record-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="icons8_record_28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\img\icons8-record-28.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_refresh_24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\img\icons8-refresh-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

@@ -30,7 +30,20 @@
         {
             this.panelMain = new System.Windows.Forms.Panel();
             this.tabpanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panelTemp = new System.Windows.Forms.Panel();
+            this.lblTemp = new System.Windows.Forms.Label();
+            this.pbarTemp = new HEMA_Program.VerticalProgressBar();
+            this.panelLoad = new System.Windows.Forms.Panel();
+            this.lblLoad = new System.Windows.Forms.Label();
+            this.pbarLoad = new HEMA_Program.VerticalProgressBar();
             this.panelRev = new System.Windows.Forms.Panel();
+            this.aGauge1 = new System.Windows.Forms.AGauge();
+            this.lblRev = new System.Windows.Forms.Label();
+            this.valRev = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.aGauge2 = new System.Windows.Forms.AGauge();
+            this.lblSpeed = new System.Windows.Forms.Label();
+            this.valSpeed = new System.Windows.Forms.Label();
             this.tabpanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panelTripCons = new System.Windows.Forms.Panel();
             this.valueTripCons = new System.Windows.Forms.Label();
@@ -51,22 +64,12 @@
             this.panelFuelHour = new System.Windows.Forms.Panel();
             this.valueFuelHour = new System.Windows.Forms.Label();
             this.lblFueHour = new System.Windows.Forms.Label();
-            this.gaugeRev = new System.Windows.Forms.AGauge();
-            this.panelLoad = new System.Windows.Forms.Panel();
-            this.lblLoad = new System.Windows.Forms.Label();
-            this.panelTemp = new System.Windows.Forms.Panel();
-            this.lblTemp = new System.Windows.Forms.Label();
-            this.pbarTemp = new HEMA_Program.VerticalProgressBar();
-            this.pbarLoad = new HEMA_Program.VerticalProgressBar();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.gaugeSpeed = new System.Windows.Forms.AGauge();
-            this.valRev = new System.Windows.Forms.Label();
-            this.lblRev = new System.Windows.Forms.Label();
-            this.lblSpeed = new System.Windows.Forms.Label();
-            this.valSpeed = new System.Windows.Forms.Label();
             this.panelMain.SuspendLayout();
             this.tabpanel3.SuspendLayout();
+            this.panelTemp.SuspendLayout();
+            this.panelLoad.SuspendLayout();
             this.panelRev.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.tabpanel2.SuspendLayout();
             this.panelTripCons.SuspendLayout();
             this.panelDistance.SuspendLayout();
@@ -75,9 +78,6 @@
             this.panelTotalCons.SuspendLayout();
             this.panelInstantCons.SuspendLayout();
             this.panelFuelHour.SuspendLayout();
-            this.panelLoad.SuspendLayout();
-            this.panelTemp.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelMain
@@ -113,17 +113,222 @@
             this.tabpanel3.Size = new System.Drawing.Size(600, 252);
             this.tabpanel3.TabIndex = 2;
             // 
+            // panelTemp
+            // 
+            this.panelTemp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelTemp.Controls.Add(this.lblTemp);
+            this.panelTemp.Controls.Add(this.pbarTemp);
+            this.panelTemp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelTemp.Location = new System.Drawing.Point(303, 3);
+            this.panelTemp.Name = "panelTemp";
+            this.panelTemp.Size = new System.Drawing.Size(54, 246);
+            this.panelTemp.TabIndex = 13;
+            // 
+            // lblTemp
+            // 
+            this.lblTemp.BackColor = System.Drawing.Color.Gray;
+            this.lblTemp.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblTemp.ForeColor = System.Drawing.Color.White;
+            this.lblTemp.Location = new System.Drawing.Point(0, 0);
+            this.lblTemp.Margin = new System.Windows.Forms.Padding(0);
+            this.lblTemp.Name = "lblTemp";
+            this.lblTemp.Size = new System.Drawing.Size(50, 42);
+            this.lblTemp.TabIndex = 1;
+            this.lblTemp.Text = "Temp";
+            this.lblTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbarTemp
+            // 
+            this.pbarTemp.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbarTemp.Location = new System.Drawing.Point(0, 0);
+            this.pbarTemp.Margin = new System.Windows.Forms.Padding(0);
+            this.pbarTemp.Maximum = 200;
+            this.pbarTemp.Name = "pbarTemp";
+            this.pbarTemp.Size = new System.Drawing.Size(50, 242);
+            this.pbarTemp.TabIndex = 0;
+            this.pbarTemp.Value = 80;
+            // 
+            // panelLoad
+            // 
+            this.panelLoad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panelLoad.Controls.Add(this.lblLoad);
+            this.panelLoad.Controls.Add(this.pbarLoad);
+            this.panelLoad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelLoad.Location = new System.Drawing.Point(243, 3);
+            this.panelLoad.Name = "panelLoad";
+            this.panelLoad.Size = new System.Drawing.Size(54, 246);
+            this.panelLoad.TabIndex = 12;
+            // 
+            // lblLoad
+            // 
+            this.lblLoad.BackColor = System.Drawing.Color.Gray;
+            this.lblLoad.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lblLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblLoad.ForeColor = System.Drawing.Color.White;
+            this.lblLoad.Location = new System.Drawing.Point(0, 0);
+            this.lblLoad.Margin = new System.Windows.Forms.Padding(0);
+            this.lblLoad.Name = "lblLoad";
+            this.lblLoad.Size = new System.Drawing.Size(50, 42);
+            this.lblLoad.TabIndex = 1;
+            this.lblLoad.Text = "Load";
+            this.lblLoad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pbarLoad
+            // 
+            this.pbarLoad.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbarLoad.Location = new System.Drawing.Point(0, 0);
+            this.pbarLoad.Margin = new System.Windows.Forms.Padding(0);
+            this.pbarLoad.Name = "pbarLoad";
+            this.pbarLoad.Size = new System.Drawing.Size(50, 242);
+            this.pbarLoad.TabIndex = 0;
+            this.pbarLoad.Value = 20;
+            // 
             // panelRev
             // 
+            this.panelRev.Controls.Add(this.aGauge1);
             this.panelRev.Controls.Add(this.lblRev);
             this.panelRev.Controls.Add(this.valRev);
-            this.panelRev.Controls.Add(this.gaugeRev);
             this.panelRev.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelRev.Location = new System.Drawing.Point(0, 0);
             this.panelRev.Margin = new System.Windows.Forms.Padding(0);
             this.panelRev.Name = "panelRev";
             this.panelRev.Size = new System.Drawing.Size(240, 252);
             this.panelRev.TabIndex = 10;
+            // 
+            // aGauge1
+            // 
+            this.aGauge1.BaseArcColor = System.Drawing.Color.Gray;
+            this.aGauge1.BaseArcRadius = 80;
+            this.aGauge1.BaseArcStart = 135;
+            this.aGauge1.BaseArcSweep = 270;
+            this.aGauge1.BaseArcWidth = 2;
+            this.aGauge1.Center = new System.Drawing.Point(100, 100);
+            this.aGauge1.Location = new System.Drawing.Point(18, 0);
+            this.aGauge1.MaxValue = 300F;
+            this.aGauge1.MinValue = 0F;
+            this.aGauge1.Name = "aGauge1";
+            this.aGauge1.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Gray;
+            this.aGauge1.NeedleColor2 = System.Drawing.Color.DimGray;
+            this.aGauge1.NeedleRadius = 80;
+            this.aGauge1.NeedleType = System.Windows.Forms.NeedleType.Advance;
+            this.aGauge1.NeedleWidth = 2;
+            this.aGauge1.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge1.ScaleLinesInterInnerRadius = 73;
+            this.aGauge1.ScaleLinesInterOuterRadius = 80;
+            this.aGauge1.ScaleLinesInterWidth = 1;
+            this.aGauge1.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge1.ScaleLinesMajorInnerRadius = 70;
+            this.aGauge1.ScaleLinesMajorOuterRadius = 80;
+            this.aGauge1.ScaleLinesMajorStepValue = 30F;
+            this.aGauge1.ScaleLinesMajorWidth = 2;
+            this.aGauge1.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge1.ScaleLinesMinorInnerRadius = 75;
+            this.aGauge1.ScaleLinesMinorOuterRadius = 80;
+            this.aGauge1.ScaleLinesMinorTicks = 9;
+            this.aGauge1.ScaleLinesMinorWidth = 1;
+            this.aGauge1.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge1.ScaleNumbersFormat = null;
+            this.aGauge1.ScaleNumbersRadius = 95;
+            this.aGauge1.ScaleNumbersRotation = 0;
+            this.aGauge1.ScaleNumbersStartScaleLine = 0;
+            this.aGauge1.ScaleNumbersStepScaleLines = 1;
+            this.aGauge1.Size = new System.Drawing.Size(205, 180);
+            this.aGauge1.TabIndex = 4;
+            this.aGauge1.Text = "aGauge1";
+            this.aGauge1.Value = 0F;
+            // 
+            // lblRev
+            // 
+            this.lblRev.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblRev.Location = new System.Drawing.Point(0, 180);
+            this.lblRev.Name = "lblRev";
+            this.lblRev.Size = new System.Drawing.Size(240, 36);
+            this.lblRev.TabIndex = 3;
+            this.lblRev.Text = "RPM x 1000";
+            this.lblRev.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // valRev
+            // 
+            this.valRev.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.valRev.Location = new System.Drawing.Point(0, 216);
+            this.valRev.Name = "valRev";
+            this.valRev.Size = new System.Drawing.Size(240, 36);
+            this.valRev.TabIndex = 2;
+            this.valRev.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.aGauge2);
+            this.panel1.Controls.Add(this.lblSpeed);
+            this.panel1.Controls.Add(this.valSpeed);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(360, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(240, 252);
+            this.panel1.TabIndex = 14;
+            // 
+            // aGauge2
+            // 
+            this.aGauge2.BaseArcColor = System.Drawing.Color.Gray;
+            this.aGauge2.BaseArcRadius = 80;
+            this.aGauge2.BaseArcStart = 135;
+            this.aGauge2.BaseArcSweep = 270;
+            this.aGauge2.BaseArcWidth = 2;
+            this.aGauge2.Center = new System.Drawing.Point(100, 100);
+            this.aGauge2.Location = new System.Drawing.Point(18, 0);
+            this.aGauge2.MaxValue = 10F;
+            this.aGauge2.MinValue = 0F;
+            this.aGauge2.Name = "aGauge2";
+            this.aGauge2.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Gray;
+            this.aGauge2.NeedleColor2 = System.Drawing.Color.DimGray;
+            this.aGauge2.NeedleRadius = 80;
+            this.aGauge2.NeedleType = System.Windows.Forms.NeedleType.Advance;
+            this.aGauge2.NeedleWidth = 2;
+            this.aGauge2.ScaleLinesInterColor = System.Drawing.Color.Black;
+            this.aGauge2.ScaleLinesInterInnerRadius = 73;
+            this.aGauge2.ScaleLinesInterOuterRadius = 80;
+            this.aGauge2.ScaleLinesInterWidth = 1;
+            this.aGauge2.ScaleLinesMajorColor = System.Drawing.Color.Black;
+            this.aGauge2.ScaleLinesMajorInnerRadius = 70;
+            this.aGauge2.ScaleLinesMajorOuterRadius = 80;
+            this.aGauge2.ScaleLinesMajorStepValue = 1F;
+            this.aGauge2.ScaleLinesMajorWidth = 2;
+            this.aGauge2.ScaleLinesMinorColor = System.Drawing.Color.Gray;
+            this.aGauge2.ScaleLinesMinorInnerRadius = 75;
+            this.aGauge2.ScaleLinesMinorOuterRadius = 80;
+            this.aGauge2.ScaleLinesMinorTicks = 9;
+            this.aGauge2.ScaleLinesMinorWidth = 1;
+            this.aGauge2.ScaleNumbersColor = System.Drawing.Color.Black;
+            this.aGauge2.ScaleNumbersFormat = null;
+            this.aGauge2.ScaleNumbersRadius = 95;
+            this.aGauge2.ScaleNumbersRotation = 0;
+            this.aGauge2.ScaleNumbersStartScaleLine = 0;
+            this.aGauge2.ScaleNumbersStepScaleLines = 1;
+            this.aGauge2.Size = new System.Drawing.Size(205, 180);
+            this.aGauge2.TabIndex = 20;
+            this.aGauge2.Text = "aGauge2";
+            this.aGauge2.Value = 0F;
+            // 
+            // lblSpeed
+            // 
+            this.lblSpeed.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblSpeed.Location = new System.Drawing.Point(0, 180);
+            this.lblSpeed.Name = "lblSpeed";
+            this.lblSpeed.Size = new System.Drawing.Size(240, 36);
+            this.lblSpeed.TabIndex = 19;
+            this.lblSpeed.Text = "KMH";
+            this.lblSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // valSpeed
+            // 
+            this.valSpeed.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.valSpeed.Location = new System.Drawing.Point(0, 216);
+            this.valSpeed.Name = "valSpeed";
+            this.valSpeed.Size = new System.Drawing.Size(240, 36);
+            this.valSpeed.TabIndex = 18;
+            this.valSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabpanel2
             // 
@@ -365,213 +570,6 @@
             this.lblFueHour.Text = "Fuel (lt/hr)";
             this.lblFueHour.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // gaugeRev
-            // 
-            this.gaugeRev.BaseArcColor = System.Drawing.Color.Gray;
-            this.gaugeRev.BaseArcRadius = 80;
-            this.gaugeRev.BaseArcStart = 135;
-            this.gaugeRev.BaseArcSweep = 270;
-            this.gaugeRev.BaseArcWidth = 2;
-            this.gaugeRev.Center = new System.Drawing.Point(100, 100);
-            this.gaugeRev.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gaugeRev.Location = new System.Drawing.Point(0, 0);
-            this.gaugeRev.Margin = new System.Windows.Forms.Padding(0);
-            this.gaugeRev.MaxValue = 9F;
-            this.gaugeRev.MinValue = 0F;
-            this.gaugeRev.Name = "gaugeRev";
-            this.gaugeRev.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Red;
-            this.gaugeRev.NeedleColor2 = System.Drawing.Color.Red;
-            this.gaugeRev.NeedleRadius = 70;
-            this.gaugeRev.NeedleType = System.Windows.Forms.NeedleType.Advance;
-            this.gaugeRev.NeedleWidth = 2;
-            this.gaugeRev.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.gaugeRev.ScaleLinesInterInnerRadius = 73;
-            this.gaugeRev.ScaleLinesInterOuterRadius = 80;
-            this.gaugeRev.ScaleLinesInterWidth = 1;
-            this.gaugeRev.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.gaugeRev.ScaleLinesMajorInnerRadius = 70;
-            this.gaugeRev.ScaleLinesMajorOuterRadius = 80;
-            this.gaugeRev.ScaleLinesMajorStepValue = 1F;
-            this.gaugeRev.ScaleLinesMajorWidth = 2;
-            this.gaugeRev.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.gaugeRev.ScaleLinesMinorInnerRadius = 75;
-            this.gaugeRev.ScaleLinesMinorOuterRadius = 80;
-            this.gaugeRev.ScaleLinesMinorTicks = 9;
-            this.gaugeRev.ScaleLinesMinorWidth = 1;
-            this.gaugeRev.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.gaugeRev.ScaleNumbersFormat = null;
-            this.gaugeRev.ScaleNumbersRadius = 95;
-            this.gaugeRev.ScaleNumbersRotation = 0;
-            this.gaugeRev.ScaleNumbersStartScaleLine = 0;
-            this.gaugeRev.ScaleNumbersStepScaleLines = 1;
-            this.gaugeRev.Size = new System.Drawing.Size(240, 252);
-            this.gaugeRev.TabIndex = 1;
-            this.gaugeRev.Value = 1.254F;
-            // 
-            // panelLoad
-            // 
-            this.panelLoad.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelLoad.Controls.Add(this.lblLoad);
-            this.panelLoad.Controls.Add(this.pbarLoad);
-            this.panelLoad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelLoad.Location = new System.Drawing.Point(243, 3);
-            this.panelLoad.Name = "panelLoad";
-            this.panelLoad.Size = new System.Drawing.Size(54, 246);
-            this.panelLoad.TabIndex = 12;
-            // 
-            // lblLoad
-            // 
-            this.lblLoad.BackColor = System.Drawing.Color.Gray;
-            this.lblLoad.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblLoad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblLoad.ForeColor = System.Drawing.Color.White;
-            this.lblLoad.Location = new System.Drawing.Point(0, 0);
-            this.lblLoad.Margin = new System.Windows.Forms.Padding(0);
-            this.lblLoad.Name = "lblLoad";
-            this.lblLoad.Size = new System.Drawing.Size(50, 42);
-            this.lblLoad.TabIndex = 1;
-            this.lblLoad.Text = "Load";
-            this.lblLoad.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // panelTemp
-            // 
-            this.panelTemp.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.panelTemp.Controls.Add(this.lblTemp);
-            this.panelTemp.Controls.Add(this.pbarTemp);
-            this.panelTemp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelTemp.Location = new System.Drawing.Point(303, 3);
-            this.panelTemp.Name = "panelTemp";
-            this.panelTemp.Size = new System.Drawing.Size(54, 246);
-            this.panelTemp.TabIndex = 13;
-            // 
-            // lblTemp
-            // 
-            this.lblTemp.BackColor = System.Drawing.Color.Gray;
-            this.lblTemp.Dock = System.Windows.Forms.DockStyle.Top;
-            this.lblTemp.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblTemp.ForeColor = System.Drawing.Color.White;
-            this.lblTemp.Location = new System.Drawing.Point(0, 0);
-            this.lblTemp.Margin = new System.Windows.Forms.Padding(0);
-            this.lblTemp.Name = "lblTemp";
-            this.lblTemp.Size = new System.Drawing.Size(50, 42);
-            this.lblTemp.TabIndex = 1;
-            this.lblTemp.Text = "Temp";
-            this.lblTemp.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // pbarTemp
-            // 
-            this.pbarTemp.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbarTemp.Location = new System.Drawing.Point(0, 0);
-            this.pbarTemp.Margin = new System.Windows.Forms.Padding(0);
-            this.pbarTemp.Maximum = 200;
-            this.pbarTemp.Name = "pbarTemp";
-            this.pbarTemp.Size = new System.Drawing.Size(50, 242);
-            this.pbarTemp.TabIndex = 0;
-            this.pbarTemp.Value = 80;
-            // 
-            // pbarLoad
-            // 
-            this.pbarLoad.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbarLoad.Location = new System.Drawing.Point(0, 0);
-            this.pbarLoad.Margin = new System.Windows.Forms.Padding(0);
-            this.pbarLoad.Name = "pbarLoad";
-            this.pbarLoad.Size = new System.Drawing.Size(50, 242);
-            this.pbarLoad.TabIndex = 0;
-            this.pbarLoad.Value = 20;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lblSpeed);
-            this.panel1.Controls.Add(this.valSpeed);
-            this.panel1.Controls.Add(this.gaugeSpeed);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(360, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(240, 252);
-            this.panel1.TabIndex = 14;
-            // 
-            // gaugeSpeed
-            // 
-            this.gaugeSpeed.BaseArcColor = System.Drawing.Color.Gray;
-            this.gaugeSpeed.BaseArcRadius = 80;
-            this.gaugeSpeed.BaseArcStart = 135;
-            this.gaugeSpeed.BaseArcSweep = 270;
-            this.gaugeSpeed.BaseArcWidth = 2;
-            this.gaugeSpeed.Center = new System.Drawing.Point(100, 100);
-            this.gaugeSpeed.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gaugeSpeed.Location = new System.Drawing.Point(0, 0);
-            this.gaugeSpeed.Margin = new System.Windows.Forms.Padding(0);
-            this.gaugeSpeed.MaxValue = 300F;
-            this.gaugeSpeed.MinValue = 0F;
-            this.gaugeSpeed.Name = "gaugeSpeed";
-            this.gaugeSpeed.NeedleColor1 = System.Windows.Forms.AGaugeNeedleColor.Red;
-            this.gaugeSpeed.NeedleColor2 = System.Drawing.Color.Red;
-            this.gaugeSpeed.NeedleRadius = 70;
-            this.gaugeSpeed.NeedleType = System.Windows.Forms.NeedleType.Advance;
-            this.gaugeSpeed.NeedleWidth = 2;
-            this.gaugeSpeed.ScaleLinesInterColor = System.Drawing.Color.Black;
-            this.gaugeSpeed.ScaleLinesInterInnerRadius = 73;
-            this.gaugeSpeed.ScaleLinesInterOuterRadius = 80;
-            this.gaugeSpeed.ScaleLinesInterWidth = 1;
-            this.gaugeSpeed.ScaleLinesMajorColor = System.Drawing.Color.Black;
-            this.gaugeSpeed.ScaleLinesMajorInnerRadius = 70;
-            this.gaugeSpeed.ScaleLinesMajorOuterRadius = 80;
-            this.gaugeSpeed.ScaleLinesMajorStepValue = 30F;
-            this.gaugeSpeed.ScaleLinesMajorWidth = 2;
-            this.gaugeSpeed.ScaleLinesMinorColor = System.Drawing.Color.Gray;
-            this.gaugeSpeed.ScaleLinesMinorInnerRadius = 75;
-            this.gaugeSpeed.ScaleLinesMinorOuterRadius = 80;
-            this.gaugeSpeed.ScaleLinesMinorTicks = 9;
-            this.gaugeSpeed.ScaleLinesMinorWidth = 1;
-            this.gaugeSpeed.ScaleNumbersColor = System.Drawing.Color.Black;
-            this.gaugeSpeed.ScaleNumbersFormat = null;
-            this.gaugeSpeed.ScaleNumbersRadius = 95;
-            this.gaugeSpeed.ScaleNumbersRotation = 0;
-            this.gaugeSpeed.ScaleNumbersStartScaleLine = 0;
-            this.gaugeSpeed.ScaleNumbersStepScaleLines = 1;
-            this.gaugeSpeed.Size = new System.Drawing.Size(240, 252);
-            this.gaugeSpeed.TabIndex = 17;
-            this.gaugeSpeed.Value = 80F;
-            // 
-            // valRev
-            // 
-            this.valRev.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.valRev.Location = new System.Drawing.Point(0, 216);
-            this.valRev.Name = "valRev";
-            this.valRev.Size = new System.Drawing.Size(240, 36);
-            this.valRev.TabIndex = 2;
-            this.valRev.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblRev
-            // 
-            this.lblRev.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblRev.Location = new System.Drawing.Point(0, 180);
-            this.lblRev.Name = "lblRev";
-            this.lblRev.Size = new System.Drawing.Size(240, 36);
-            this.lblRev.TabIndex = 3;
-            this.lblRev.Text = "RPM x 1000";
-            this.lblRev.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // lblSpeed
-            // 
-            this.lblSpeed.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblSpeed.Location = new System.Drawing.Point(0, 180);
-            this.lblSpeed.Name = "lblSpeed";
-            this.lblSpeed.Size = new System.Drawing.Size(240, 36);
-            this.lblSpeed.TabIndex = 19;
-            this.lblSpeed.Text = "KMH";
-            this.lblSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // valSpeed
-            // 
-            this.valSpeed.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.valSpeed.Location = new System.Drawing.Point(0, 216);
-            this.valSpeed.Name = "valSpeed";
-            this.valSpeed.Size = new System.Drawing.Size(240, 36);
-            this.valSpeed.TabIndex = 18;
-            this.valSpeed.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -583,7 +581,10 @@
             this.Text = "Dashboard";
             this.panelMain.ResumeLayout(false);
             this.tabpanel3.ResumeLayout(false);
+            this.panelTemp.ResumeLayout(false);
+            this.panelLoad.ResumeLayout(false);
             this.panelRev.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.tabpanel2.ResumeLayout(false);
             this.panelTripCons.ResumeLayout(false);
             this.panelDistance.ResumeLayout(false);
@@ -592,9 +593,6 @@
             this.panelTotalCons.ResumeLayout(false);
             this.panelInstantCons.ResumeLayout(false);
             this.panelFuelHour.ResumeLayout(false);
-            this.panelLoad.ResumeLayout(false);
-            this.panelTemp.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -624,7 +622,6 @@
         private System.Windows.Forms.Label valueFuelHour;
         private System.Windows.Forms.TableLayoutPanel tabpanel3;
         private System.Windows.Forms.Panel panelRev;
-        private System.Windows.Forms.AGauge gaugeRev;
         private System.Windows.Forms.Panel panelLoad;
         private System.Windows.Forms.Label lblLoad;
         private VerticalProgressBar pbarLoad;
@@ -632,10 +629,11 @@
         private System.Windows.Forms.Label lblTemp;
         private VerticalProgressBar pbarTemp;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.AGauge gaugeSpeed;
         private System.Windows.Forms.Label lblRev;
         private System.Windows.Forms.Label valRev;
         private System.Windows.Forms.Label lblSpeed;
         private System.Windows.Forms.Label valSpeed;
+        private System.Windows.Forms.AGauge aGauge1;
+        private System.Windows.Forms.AGauge aGauge2;
     }
 }

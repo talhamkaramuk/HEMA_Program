@@ -9,9 +9,12 @@ namespace HEMA_Program.Forms.SetupForms
     {
         private bool _connected = Settings.Default.comConn;
 
+        public static bool con;
+
         public Connection()
         {
             InitializeComponent();
+            con = false;
         }
 
         private void Connection_Load(object sender, EventArgs e)
@@ -40,6 +43,7 @@ namespace HEMA_Program.Forms.SetupForms
                     serialPort.BaudRate = Convert.ToInt32(cboxBaudRate.Text);
                     Settings.Default.baudRate = cboxBaudRate.Text;
                     serialPort.Open();
+                    con = true;
                 }
                 if (!cboxBaudRate.Enabled && tboxBaudRate.Enabled)
                 {
@@ -79,6 +83,7 @@ namespace HEMA_Program.Forms.SetupForms
                     cboxBaudRate.Enabled = true;
                     tboxBaudRate.Enabled = true;
                     chboxBaudRate.Enabled = true;
+                    con = false;
                 }
                 Settings.Default.Save();
             }

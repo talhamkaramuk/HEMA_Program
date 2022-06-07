@@ -34,6 +34,7 @@
             this.panelHeader = new System.Windows.Forms.Panel();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelSide = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnLogs = new System.Windows.Forms.Button();
             this.btnDashboard = new System.Windows.Forms.Button();
             this.btnDiagnostic = new System.Windows.Forms.Button();
@@ -111,6 +112,7 @@
             // panelSide
             // 
             this.panelSide.BackColor = System.Drawing.Color.White;
+            this.panelSide.Controls.Add(this.button1);
             this.panelSide.Controls.Add(this.btnLogs);
             this.panelSide.Controls.Add(this.btnDashboard);
             this.panelSide.Controls.Add(this.btnDiagnostic);
@@ -124,6 +126,15 @@
             this.panelSide.Name = "panelSide";
             this.panelSide.Size = new System.Drawing.Size(180, 536);
             this.panelSide.TabIndex = 1;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(86, 447);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // btnLogs
             // 
@@ -143,6 +154,7 @@
             this.btnLogs.Text = "Logs";
             this.btnLogs.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLogs.UseVisualStyleBackColor = true;
+            this.btnLogs.Visible = false;
             this.btnLogs.Click += new System.EventHandler(this.btnLogs_Click);
             // 
             // btnDashboard
@@ -203,6 +215,7 @@
             this.btnSetup.Text = "Setup";
             this.btnSetup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSetup.UseVisualStyleBackColor = true;
+            this.btnSetup.Visible = false;
             this.btnSetup.Click += new System.EventHandler(this.btnSetup_Click);
             // 
             // btnHome
@@ -432,6 +445,7 @@
         private System.Windows.Forms.ProgressBar pbarECU;
         private System.Windows.Forms.Label lblECU;
         private System.Windows.Forms.Panel panelCol3;
+        private System.Windows.Forms.Button button1;
     }
 }
 

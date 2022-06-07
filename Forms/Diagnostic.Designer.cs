@@ -31,11 +31,7 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.panelForm = new System.Windows.Forms.Panel();
             this.tabpanelMenu = new System.Windows.Forms.TableLayoutPanel();
-            this.btnTroubleCodes = new System.Windows.Forms.Button();
-            this.btnFreezeFrame = new System.Windows.Forms.Button();
-            this.btnMonitorTests = new System.Windows.Forms.Button();
-            this.btnPIDValues = new System.Windows.Forms.Button();
-            this.btnRawData = new System.Windows.Forms.Button();
+            this.btnConn = new System.Windows.Forms.Button();
             this.panelMain.SuspendLayout();
             this.tabpanelMenu.SuspendLayout();
             this.SuspendLayout();
@@ -70,11 +66,7 @@
             this.tabpanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tabpanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tabpanelMenu.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.tabpanelMenu.Controls.Add(this.btnTroubleCodes, 0, 0);
-            this.tabpanelMenu.Controls.Add(this.btnFreezeFrame, 1, 0);
-            this.tabpanelMenu.Controls.Add(this.btnMonitorTests, 2, 0);
-            this.tabpanelMenu.Controls.Add(this.btnPIDValues, 3, 0);
-            this.tabpanelMenu.Controls.Add(this.btnRawData, 4, 0);
+            this.tabpanelMenu.Controls.Add(this.btnConn, 0, 0);
             this.tabpanelMenu.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabpanelMenu.Location = new System.Drawing.Point(0, 0);
             this.tabpanelMenu.Name = "tabpanelMenu";
@@ -83,90 +75,21 @@
             this.tabpanelMenu.Size = new System.Drawing.Size(600, 50);
             this.tabpanelMenu.TabIndex = 0;
             // 
-            // btnTroubleCodes
+            // btnConn
             // 
-            this.btnTroubleCodes.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnTroubleCodes.FlatAppearance.BorderSize = 0;
-            this.btnTroubleCodes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTroubleCodes.Image = global::HEMA_Program.Properties.Resources.icons8_error_28;
-            this.btnTroubleCodes.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTroubleCodes.Location = new System.Drawing.Point(0, 0);
-            this.btnTroubleCodes.Margin = new System.Windows.Forms.Padding(0);
-            this.btnTroubleCodes.Name = "btnTroubleCodes";
-            this.btnTroubleCodes.Size = new System.Drawing.Size(100, 50);
-            this.btnTroubleCodes.TabIndex = 0;
-            this.btnTroubleCodes.Text = "Trouble\r\nCodes";
-            this.btnTroubleCodes.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTroubleCodes.UseVisualStyleBackColor = false;
-            this.btnTroubleCodes.Click += new System.EventHandler(this.btnTroubleCodes_Click);
-            // 
-            // btnFreezeFrame
-            // 
-            this.btnFreezeFrame.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnFreezeFrame.FlatAppearance.BorderSize = 0;
-            this.btnFreezeFrame.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnFreezeFrame.Image = global::HEMA_Program.Properties.Resources.icons8_data_sheet_error_28;
-            this.btnFreezeFrame.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnFreezeFrame.Location = new System.Drawing.Point(100, 0);
-            this.btnFreezeFrame.Margin = new System.Windows.Forms.Padding(0);
-            this.btnFreezeFrame.Name = "btnFreezeFrame";
-            this.btnFreezeFrame.Size = new System.Drawing.Size(100, 50);
-            this.btnFreezeFrame.TabIndex = 1;
-            this.btnFreezeFrame.Text = "Freeze\r\nFrame";
-            this.btnFreezeFrame.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnFreezeFrame.UseVisualStyleBackColor = false;
-            this.btnFreezeFrame.Click += new System.EventHandler(this.btnFreezeFrame_Click);
-            // 
-            // btnMonitorTests
-            // 
-            this.btnMonitorTests.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnMonitorTests.FlatAppearance.BorderSize = 0;
-            this.btnMonitorTests.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMonitorTests.Image = global::HEMA_Program.Properties.Resources.icons8_test_28;
-            this.btnMonitorTests.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMonitorTests.Location = new System.Drawing.Point(200, 0);
-            this.btnMonitorTests.Margin = new System.Windows.Forms.Padding(0);
-            this.btnMonitorTests.Name = "btnMonitorTests";
-            this.btnMonitorTests.Size = new System.Drawing.Size(100, 50);
-            this.btnMonitorTests.TabIndex = 2;
-            this.btnMonitorTests.Text = "Monitor\r\nTests";
-            this.btnMonitorTests.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnMonitorTests.UseVisualStyleBackColor = false;
-            this.btnMonitorTests.Click += new System.EventHandler(this.btnMonitorTests_Click);
-            // 
-            // btnPIDValues
-            // 
-            this.btnPIDValues.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnPIDValues.FlatAppearance.BorderSize = 0;
-            this.btnPIDValues.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPIDValues.Image = global::HEMA_Program.Properties.Resources.icons8_data_sheet_search_28;
-            this.btnPIDValues.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPIDValues.Location = new System.Drawing.Point(300, 0);
-            this.btnPIDValues.Margin = new System.Windows.Forms.Padding(0);
-            this.btnPIDValues.Name = "btnPIDValues";
-            this.btnPIDValues.Size = new System.Drawing.Size(100, 50);
-            this.btnPIDValues.TabIndex = 3;
-            this.btnPIDValues.Text = "PID Values";
-            this.btnPIDValues.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnPIDValues.UseVisualStyleBackColor = false;
-            this.btnPIDValues.Click += new System.EventHandler(this.btnPIDValues_Click);
-            // 
-            // btnRawData
-            // 
-            this.btnRawData.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRawData.FlatAppearance.BorderSize = 0;
-            this.btnRawData.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRawData.Image = global::HEMA_Program.Properties.Resources.icons8_new_document_28;
-            this.btnRawData.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRawData.Location = new System.Drawing.Point(400, 0);
-            this.btnRawData.Margin = new System.Windows.Forms.Padding(0);
-            this.btnRawData.Name = "btnRawData";
-            this.btnRawData.Size = new System.Drawing.Size(100, 50);
-            this.btnRawData.TabIndex = 4;
-            this.btnRawData.Text = "Raw Data";
-            this.btnRawData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnRawData.UseVisualStyleBackColor = false;
-            this.btnRawData.Click += new System.EventHandler(this.btnRawData_Click);
+            this.btnConn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnConn.FlatAppearance.BorderSize = 0;
+            this.btnConn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnConn.Image = global::HEMA_Program.Properties.Resources.icons8_link_28;
+            this.btnConn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnConn.Location = new System.Drawing.Point(0, 0);
+            this.btnConn.Margin = new System.Windows.Forms.Padding(0);
+            this.btnConn.Name = "btnConn";
+            this.btnConn.Size = new System.Drawing.Size(100, 50);
+            this.btnConn.TabIndex = 0;
+            this.btnConn.Text = "Connection";
+            this.btnConn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnConn.UseVisualStyleBackColor = false;
             // 
             // Diagnostic
             // 
@@ -188,11 +111,7 @@
 
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.TableLayoutPanel tabpanelMenu;
-        private System.Windows.Forms.Button btnTroubleCodes;
-        private System.Windows.Forms.Button btnFreezeFrame;
-        private System.Windows.Forms.Button btnMonitorTests;
-        private System.Windows.Forms.Button btnPIDValues;
-        private System.Windows.Forms.Button btnRawData;
         private System.Windows.Forms.Panel panelForm;
+        private System.Windows.Forms.Button btnConn;
     }
 }

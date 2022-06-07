@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data;
+using System.Drawing;
 using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -24,6 +25,8 @@ namespace HEMA_Program.Forms.SetupForms
         public PIDSetup()
         {
             InitializeComponent();
+            dgvTable.ColumnHeadersDefaultCellStyle.BackColor = Color.Gray;
+            dgvTable.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
         }
 
         private void btnOpen_Click(object sender, EventArgs e)
@@ -149,6 +152,7 @@ namespace HEMA_Program.Forms.SetupForms
                     }
                 }
 
+
                 saveFileDialog1.FileName = "pid_table";
                 saveFileDialog1.DefaultExt = ".xlsx";
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
@@ -184,6 +188,29 @@ namespace HEMA_Program.Forms.SetupForms
         private void btnSNone_Click(object sender, EventArgs e)
         {
             dgvTable.ClearSelection();
+        }
+
+        private void dgvTable_EditingControlShowing(object sender, DataGridViewEditingControlShowingEventArgs e)
+        {
+            e.Control.KeyPress -= new KeyPressEventHandler(ColumnPolling_KeyPress);
+
+            if (dgvTable.CurrentCell.ColumnIndex == 2)
+            {
+                TextBox tbox = e.Control as TextBox;
+
+                if (tbox != null)
+                {
+                    tbox.KeyPress += new KeyPressEventHandler(ColumnPolling_KeyPress);
+                }
+            }
+        }
+
+        private void ColumnPolling_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
+                e.Handled = true;
+            }
         }
     }
 }
